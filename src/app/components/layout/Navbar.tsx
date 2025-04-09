@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import clsx from 'clsx'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -28,7 +28,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={cn(
+              className={clsx(
                 'text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition',
                 pathname === link.href && 'font-semibold text-blue-600 dark:text-blue-400'
               )}
@@ -54,7 +54,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className={cn(
+              className={clsx(
                 'block text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition',
                 pathname === link.href && 'font-semibold text-blue-600 dark:text-blue-400'
               )}
