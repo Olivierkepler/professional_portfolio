@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/dashboard', label: 'Dashboard' },
-  { href: '/search', label: 'Search' },
+  // { href: '/dashboard', label: 'Dashboard' },
+  // { href: '/search', label: 'Search' },
 ]
 
 export default function Navbar() {
