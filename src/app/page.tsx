@@ -7,9 +7,7 @@ export default function Home() {
         <h1>Hello World</h1>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <button className="flex items-center gap-[8px] rounded-md bg-black px-[16px] py-[8px] text-sm font-medium text-white">
-          <Image src="/logo.svg" alt="logo" width={24} height={24} />
-        </button>
+        <button className="flex items-center gap-[8px] rounded-md bg-black px-[16px] py-[8px] text-sm font-medium text-white"></button>
       </footer>
     </div>
   );
